@@ -1,0 +1,67 @@
+html {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ), url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header {
+  text-align: center;
+  transform: translate(0, 125%);
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.navbar a {
+  color: #333333;
+}
+
+.navbar-toggler-icon span {
+  color: #333333;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Social icons in the footer */
+
+.social-wrapper {
+  text-align: center;
+}
+
+.social-wrapper span {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+.social-wrapper a {
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .social-wrapper span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
