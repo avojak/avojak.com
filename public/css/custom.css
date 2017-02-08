@@ -1,0 +1,78 @@
+/* Custom CSS in addition to the sticky-footer-navbar Bootstrap template */
+
+html {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ), url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header {
+  text-align: center;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.navbar a {
+  color: #333333;
+}
+
+.navbar-toggler-icon span {
+  color: #333333;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgba(14, 255, 255, 0);
+}
+
+/* Social icons in the footer */
+
+.social-wrapper {
+  text-align: center;
+}
+
+.social-wrapper span {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+.social-wrapper a {
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .social-wrapper span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
