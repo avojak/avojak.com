@@ -29,6 +29,20 @@ header {
   margin-bottom: 20px;
 }
 
+.about {
+  width: 100%;
+}
+
+.about img {
+  margin-bottom: 20px;
+}
+
+/* Gravatar */
+
+.gravatar {
+  border-radius: 50%;
+}
+
 /* Navbar */
 
 .navbar {
@@ -70,9 +84,19 @@ header {
   color: #333333;
 }
 
+@media (min-width: 768px) {
+  #gravatar-small {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .social-wrapper span {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  #gravatar-large {
+    display: none;
   }
 }
