@@ -1,2 +1,2 @@
 # avojak
-Source for avojak.com
+Source for https://avojak.com
