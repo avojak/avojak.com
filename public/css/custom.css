@@ -2,8 +2,8 @@
 
 html {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.45),
-      rgba(255, 255, 255, 0.45)
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
     ), url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,16 +24,27 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.alert {
+  margin-bottom: 0px;
+}
+
+main {
+  text-align: center;
+  margin-top: 10%;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .cover h1 {
   font-size: 4em;
   margin-bottom: 20px;
 }
 
-.about {
-  width: 100%;
-}
-
-.about img {
+.gravatar-container {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -62,10 +73,49 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Bio */
+
+div.bio {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container .text-muted {
+  text-align: center;
+}
+
+/* Project Pages */
+
+div.github-badges {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.project-description {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.repo-link i {
+  font-size: 18px;
+}
+
 /* Footer */
 
 .footer {
   background-color: rgba(14, 255, 255, 0);
+}
+
+#updated-date {
+  text-align: center;
 }
 
 /* Social icons in the footer */
@@ -85,12 +135,15 @@ header {
 }
 
 @media (min-width: 768px) {
+
   #gravatar-small {
     display: none;
   }
+
 }
 
 @media (max-width: 767px) {
+
   .social-wrapper span {
     padding-left: 10px;
     padding-right: 10px;
@@ -99,4 +152,5 @@ header {
   #gravatar-large {
     display: none;
   }
+
 }

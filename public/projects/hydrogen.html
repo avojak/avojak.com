@@ -14,22 +14,23 @@
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#2D5A8E">
 
-    <title>avojak | about</title>
-    <meta property="og:title" content="avojak | about">
+    <title>avojak | hydrogen</title>
+    <meta property="og:title" content="avojak | hydrogen">
     <meta property="og:site_name" content="avojak">
-    <meta property="og:url" content="https://avojak.com/about">
+    <meta property="og:url" content="https://avojak.com/projects/hydrogen">
+    <!-- TODO: Update this to be the Hydrogen icon -->
     <meta property="og:image" content="https://avojak.com/apple-touch-icon.png">
-    <meta property="og:description" content="About @avojak">
+    <meta property="og:description" content="Hydrogen Eclipse plugin">
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="./css/custom.css" rel="stylesheet">
+    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,16 +55,16 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="#">About</a></li>
-            <li class="dropdown">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
               	<li class="dropdown-header">Eclipse Plugins</li>
-                <li><a href="./projects/hydrogen.html">Hydrogen</a></li>
+                <li><a href="#">Hydrogen</a></li>
               </ul>
             </li>
-            <li><a href="http://blog.avojak.com">Blog</a></li>
+            <li><a href="https://blog.avojak.com">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -74,47 +75,40 @@
     </nav>
 
     <main>
+
     	<div class="container">
-        <div class="gravatar-container row">
-          <!-- ¯\_(ツ)_/¯ It works -->
-    		  <img class="gravatar" id="gravatar-large" src="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=150" />
-          <img class="gravatar" id="gravatar-small" src="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=100" />
-        </div>
-        <div>
-          <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Kansas City, MO USA</p>
-          <p><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span> B.S. in Computer Science</p>
-          <p><span><i class="fa fa-university" aria-hidden="true"></i></span> University of Illinois at Urbana-Champaign</p>
-          <p><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> Cerner Corporation (2014 - Present)</p>
-          <p><a href="#"><span><i class="fa fa-file" aria-hidden="true"></i></span> Resume (PDF)</a></p>
+        <div class="row">
+          <h1>Hydrogen</h1>
+          <!-- <span class="label label-default">Eclipse Plugin</span> -->
         </div>
     	</div>
 
+      <div class="container github-badges">
+        <div class="row">
+          <img src="https://img.shields.io/badge/version-1.0.0--SNAPSHOT-yellow.svg" />
+          <img src="https://travis-ci.org/avojak/hydrogen.svg?branch=master" />
+          <img src="https://img.shields.io/badge/license-EPL%201.0-blue.svg" />
+        </div>
+      </div>
+
       <div class="container">
-        <div class="bio row">
-          <!-- <p>Andrew is a software engineer with three years of experience in Java development.</p> -->
+        <div class="project-description row">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida ex lacus, eget elementum ante
-            euismod quis. Mauris placerat ligula non nibh posuere, ut luctus sapien auctor. Donec vel dapibus dolor.
-            Ut volutpat pulvinar ligula, consectetur commodo metus pellentesque in. Etiam mollis dui nec dignissim
-            ornare. Vivamus in felis eu orci blandit tempus. Etiam pulvinar ac ante nec imperdiet. Fusce aliquam
-            mauris quis convallis pellentesque. Morbi finibus elit dolor. Ut semper tellus non magna fermentum, vel
-            fermentum nisi porta. Phasellus finibus neque id arcu varius maximus.
+            Hydrogen is an Eclipse plugin to configure and launch one or more <a href="http://www.h2database.com/html/main.html">H2</a> database servers. Server instances can be launched directly from the Eclipse Run Configuration menu.
+          </p>
+          <p>
+            For more details about the development of Hydrogen, check out my <a href="#">blog post</a>.
           </p>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <p>Certifications: <em>Security+</em></p>
+          <span class="repo-link"><a href="https://github.com/avojak/hydrogen"><i class="fa fa-github"></i> GitHub Repository</a></span>
         </div>
       </div>
-    </main>
 
-    <section>
-      <div class="container">
-        <!-- <p class="text-muted">Updated May 2017</p> -->
-      </div>
-    </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -133,10 +127,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/2679df6489.js"></script>
   </body>
