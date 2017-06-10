@@ -70,7 +70,7 @@ section {
 }
 
 .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, .8);
 }
 
 /* Bio */
@@ -132,6 +132,11 @@ div.project-description {
 
 .social-wrapper a {
   color: #333333;
+}
+
+/* Labels */
+.label-default {
+  background-color: #95a5a6;
 }
 
 @media (min-width: 768px) {
