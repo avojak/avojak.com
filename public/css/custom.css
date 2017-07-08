@@ -1,19 +1,33 @@
-/* Custom CSS in addition to the sticky-footer-navbar Bootstrap template */
-
-html {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+/* ==========================================================================
+   Custom CSS in addition to the sticky-footer-navbar Bootstrap template
+   ========================================================================== */
 
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: rgba(255, 255, 255, 0);
+}
+
+/**
+ * Fix for background cover image to fit screen size, not content size. This
+ * prevents stretching the image when the page is long.
+ * Taken from https://github.com/sztojka/fixed-cover-background
+ */
+body:after {
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ), url(../img/bg_full.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
@@ -48,16 +62,37 @@ section {
   margin-bottom: 20px;
 }
 
-/* Gravatar */
+/**
+ * Add subtle load-in animation for content on the home page
+ * Taken from Casper theme for the Ghost blog platform
+ */
+.page-title {
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s both;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.page-description {
+    -webkit-animation: fade-in-down 0.9s;
+    animation: fade-in-down 0.9s both;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+/* ==========================================================================
+   Gravatar
+   ========================================================================== */
 
 .gravatar {
   border-radius: 50%;
 }
 
-/* Navbar */
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
@@ -73,7 +108,9 @@ section {
   background-color: rgba(255, 255, 255, .8);
 }
 
-/* Bio */
+/* ==========================================================================
+   Bio
+   ========================================================================== */
 
 div.bio {
   text-align: center;
@@ -88,7 +125,9 @@ div.bio {
   text-align: center;
 }
 
-/* Project Pages */
+/* ==========================================================================
+   Project Pages
+   ========================================================================== */
 
 div.github-badges {
   margin-top: 20px;
@@ -108,7 +147,9 @@ div.project-description {
   font-size: 18px;
 }
 
-/* Footer */
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 .footer {
   background-color: rgba(14, 255, 255, 0);
@@ -118,7 +159,8 @@ div.project-description {
   text-align: center;
 }
 
-/* Social icons in the footer */
+/* Social icons in the footer
+   ========================================================================== */
 
 .social-wrapper {
   text-align: center;
@@ -134,10 +176,34 @@ div.project-description {
   color: #333333;
 }
 
-/* Labels */
+/* ==========================================================================
+   Labels
+   ========================================================================== */
+
 .label-default {
   background-color: #95a5a6;
 }
+
+/* ==========================================================================
+   Resume
+   ========================================================================== */
+
+.resume-row {
+  text-align: left;
+  padding: 5px 25px;
+}
+
+.resume-row h1 {
+  font-size: 24px; /* Equivalent to normal h3 */
+}
+
+.resume-row h2 {
+  font-size: 18px; /* Equivalent to normal h4 */
+}
+
+/* ==========================================================================
+   Dynamic content
+   ========================================================================== */
 
 @media (min-width: 768px) {
 
@@ -158,4 +224,33 @@ div.project-description {
     display: none;
   }
 
+}
+
+/**
+ * Used to fade in title/desc on the home page
+ * Taken from Casper theme for the Ghost blog platform
+ */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
