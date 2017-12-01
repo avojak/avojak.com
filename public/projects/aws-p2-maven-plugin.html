@@ -14,22 +14,23 @@
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#2D5A8E">
 
-    <title>avojak | about</title>
-    <meta property="og:title" content="avojak | about">
+    <title>avojak | AWS p2 Maven Plugin</title>
+    <meta property="og:title" content="avojak | AWS p2 Maven Plugin">
     <meta property="og:site_name" content="avojak">
-    <meta property="og:url" content="https://avojak.com/about">
+    <meta property="og:url" content="https://avojak.com/projects/aws-p2-maven-plugin">
+    <!-- TODO: Update this to be the Hydrogen icon -->
     <meta property="og:image" content="https://avojak.com/apple-touch-icon.png">
-    <meta property="og:description" content="About @avojak">
+    <meta property="og:description" content="AWS p2 Maven Plugin">
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="./css/custom.css" rel="stylesheet">
+    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,18 +55,18 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="#">About</a></li>
-            <li class="dropdown">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
               	<li class="dropdown-header">Eclipse Plugins</li>
-                <li><a href="./projects/hydrogen.html">Hydrogen</a></li>
+                <li><a href="./hydrogen.html">Hydrogen</a></li>
                 <li class="dropdown-header">Maven Plugins</li>
-                <li><a href="./projects/aws-p2-maven-plugin.html">AWS p2 Maven Plugin</a></li>
+                <li><a href="#">AWS p2 Maven Plugin</a></li>
               </ul>
             </li>
-            <li><a href="http://blog.avojak.com">Blog</a></li>
+            <li><a href="https://blog.avojak.com">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -76,50 +77,40 @@
     </nav>
 
     <main>
+
     	<div class="container">
-        <div class="gravatar-container row">
-          <!-- ¯\_(ツ)_/¯ It works -->
-    		  <img class="gravatar" id="gravatar-large" src="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=150" />
-          <img class="gravatar" id="gravatar-small" src="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=100" />
-        </div>
-        <div>
-          <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Castle Rock, CO USA</p>
-          <p><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> Raytheon Company (2017 - Present)</p>
-          <p><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> Cerner Corporation (2014 - 2017)</p>
-          <p><span><i class="fa fa-university" aria-hidden="true"></i></span> University of Illinois at Urbana-Champaign</p>
-          <p><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span> B.S. in Computer Science</p>
-          <p><span><i class="fa fa-file" aria-hidden="true"></i></span> Resume (<a href="./resume.html">Online</a>|<a href="#">PDF</a>)</p>
+        <div class="row">
+          <h1>AWS p2 Maven Plugin</h1> <span class="label label-default">In Progress</span>
+          <!-- <span class="label label-default">Eclipse Plugin</span> -->
         </div>
     	</div>
 
+      <!-- <div class="container github-badges">
+        <div class="row">
+          <img src="https://img.shields.io/badge/version-1.0.0--SNAPSHOT-yellow.svg" />
+          <img src="https://travis-ci.org/avojak/hydrogen.svg?branch=master" />
+          <img src="https://img.shields.io/badge/license-EPL%201.0-blue.svg" />
+        </div>
+      </div> -->
+
       <div class="container">
-        <div class="bio row">
+        <div class="project-description row">
           <p>
-            Andrew Vojak is a software engineer at Raytheon Company, and has been working professionally since
-            graduating from the University of Illinois at Urbana-Champaign in 2014 with a B.S. in Computer Science.
-            During his time at Cerner, Andrew has helped develop software to integrate physiological waveform data
-            into electronic health records. He has made a substantial impact on the project, and has been recognized
-            for his contributions around improving workflow performance and CPU utilization.
+            A Maven plugin for deploying a <a href="https://www.eclipse.org/equinox/p2/">p2</a> update site to an <a href="https://aws.amazon.com/s3/">AWS S3</a> bucket.
           </p>
-          <p>
-            In a non-professional setting, Andrew enjoys writing (and breaking other people's) code, building new
-            Raspberry Pi projects, exploring nature, and eating breakfast food at any meal. Also coffee.
-          </p>
+          <!-- <p>
+            For more details about the development of Hydrogen, check out my <a href="#">blog post</a>.
+          </p> -->
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <p>Certifications: <em>Security+</em></p>
+          <span class="repo-link"><a href="https://github.com/avojak/aws-p2-maven-plugin"><i class="fa fa-github"></i> GitHub Repository</a></span>
         </div>
       </div>
-    </main>
 
-    <section>
-      <div class="container">
-        <!-- <p class="text-muted">Updated May 2017</p> -->
-      </div>
-    </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -138,10 +129,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/2679df6489.js"></script>
   </body>
