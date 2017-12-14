@@ -43,36 +43,8 @@
   <body>
 
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="./about.html">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              	<li class="dropdown-header">Eclipse Plugins</li>
-                <li><a href="./projects/hydrogen.html">Hydrogen</a></li>
-                <li class="dropdown-header">Maven Plugins</li>
-                <li><a href="./projects/aws-p2-maven-plugin.html">AWS p2 Maven Plugin</a></li>
-              </ul>
-            </li>
-            <li><a href="http://blog.avojak.com">Blog</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="alert alert-warning" role="alert">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Heads up!</strong> This site is currently under construction.
-      </div>
+      <div class="container" id="navbar-partial"></div>
+      <div id="banner-partial"></div>
     </nav>
 
     <main>
@@ -191,17 +163,7 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="social-wrapper">
-    			<span><a href="https://twitter.com/avojak"><i class="fa fa-twitter"></i></a></span>
-    			<span><a href="https://www.linkedin.com/in/andrewvojak"><i class="fa fa-linkedin"></i></a></span>
-	        <span><a href="https://github.com/avojak"><i class="fa fa-github"></i></a></span>
-	        <span><a href="https://stackexchange.com/users/1014342/avojak"><i class="fa fa-stack-exchange"></i></a></span>
-	        <span><a href="https://keybase.io/avojak"><i class="fa fa-key" aria-hidden="true"></i></a></span>
-    		</div>
-      </div>
-    </footer>
+    <footer class="footer" id="footer-partial"></footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -214,5 +176,14 @@
     <script src="./bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/2679df6489.js"></script>
+
+    <!-- Load HTML partials -->
+    <script>
+      $("#navbar-partial").load("https://avojak.com/partials/navbar.html", function() {
+        $("#navbar-about-item").addClass("active"); // Set the Home item as active
+      });
+      $("#banner-partial").load("https://avojak.com/partials/banner.html");
+      $("#footer-partial").load("https://avojak.com/partials/footer.html");
+    </script>
   </body>
 </html>
