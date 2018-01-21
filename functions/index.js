@@ -31,6 +31,19 @@ app.get('/about', function(req, res) {
   });
 });
 
+// Resume
+app.get('/about/resume', function(req, res) {
+  const title = "avojak | Resume";
+  res.render('pages/resume', {
+    title: title,
+    meta: {
+      title: title,
+      description: "@avojak's online resume"
+    },
+    activeTab: "about"
+  });
+});
+
 // Hydrogen project page
 app.get('/projects/hydrogen', function(req, res) {
   const title = "avojak | Hydrogen";
