@@ -5,20 +5,41 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
+// Home
 app.get('/', function(req, res) {
+  const title = "avojak";
   res.render('pages/index', {
+    title: title,
+    meta: {
+      title: title,
+      description: "Homepage for @avojak"
+    },
     activeTab: null
   });
 });
 
+// About
 app.get('/about', function(req, res) {
+  const title = "avojak | About";
   res.render('pages/about', {
+    title: title,
+    meta: {
+      title: title,
+      description: "About @avojak"
+    },
     activeTab: "about"
   });
 });
 
+// Hydrogen project page
 app.get('/projects/hydrogen', function(req, res) {
+  const title = "avojak | Hydrogen";
   res.render('pages/project', {
+    title: title,
+    meta: {
+      title: title,
+      description: "Hydrogen Eclipse plugin"
+    },
     activeTab: "projects",
     project: {
       name: "Hydrogen",
@@ -29,8 +50,15 @@ app.get('/projects/hydrogen', function(req, res) {
   });
 });
 
+// AWS p2 Maven Plugin project page
 app.get('/projects/aws-p2-maven-plugin', function(req, res) {
+  const title = "avojak | Hydrogen";
   res.render('pages/project', {
+    title: title,
+    meta: {
+      title: title,
+      description: "AWS p2 Maven Plugin"
+    },
     activeTab: "projects",
     project: {
       name: "AWS p2 Maven Plugin",
