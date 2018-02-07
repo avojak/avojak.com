@@ -1,11 +1,6 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
   "hosting": {
-    "public": "public",
-    "cleanUrls": true,
-    "trailingSlash": false,
+    "public": "src/public",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -18,5 +13,8 @@
         "function": "app"
       }
     ]
+  },
+  "functions": {
+    "source": "src/functions"
   }
 }
