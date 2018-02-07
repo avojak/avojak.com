@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body>
+
+    <% include ../partials/navbar %>
+
+    <main>
+
+    	<div class="container">
+        <div class="row">
+          <h1><%= project.name %></h1> <span class="label label-default"><%= project.status %></span>
+          <!-- <span class="label label-default">Eclipse Plugin</span> -->
+        </div>
+    	</div>
+
+      <!-- <div class="container github-badges">
+        <div class="row">
+          <img src="https://img.shields.io/badge/version-1.0.0--SNAPSHOT-yellow.svg" />
+          <img src="https://travis-ci.org/avojak/hydrogen.svg?branch=master" />
+          <img src="https://img.shields.io/badge/license-EPL%201.0-blue.svg" />
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="project-description row">
+          <p>
+            <%- project.description %>
+          </p>
+          <!-- <p>
+            For more details about the development of Hydrogen, check out my <a href="#">blog post</a>.
+          </p> -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <span class="repo-link"><a href="<%= project.githubUrl %>"><i class="fa fa-github"></i> GitHub Repository</a></span>
+        </div>
+      </div>
+
+    </main>
+
+    <% include ../partials/footer %>
+
+  </body>
+</html>

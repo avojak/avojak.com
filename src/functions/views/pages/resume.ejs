@@ -1,81 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Andrew Vojak">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <meta name="msapplication-TileColor" content="#2D5A8E">
-
-    <title>avojak | resume</title>
-    <meta property="og:title" content="avojak | resume">
-    <meta property="og:site_name" content="avojak">
-    <meta property="og:url" content="https://avojak.com/resume">
-    <meta property="og:image" content="https://avojak.com/apple-touch-icon.png">
-    <meta property="og:description" content="About @avojak">
-
-    <!-- Bootstrap core CSS -->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
-    <!-- Custom styles for this template -->
-    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="./css/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <% include ../partials/head %>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="./about.html">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              	<li class="dropdown-header">Eclipse Plugins</li>
-                <li><a href="./projects/hydrogen.html">Hydrogen</a></li>
-                <li class="dropdown-header">Maven Plugins</li>
-                <li><a href="./projects/aws-p2-maven-plugin.html">AWS p2 Maven Plugin</a></li>
-              </ul>
-            </li>
-            <li><a href="http://blog.avojak.com">Blog</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="alert alert-warning" role="alert">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Heads up!</strong> This site is currently under construction.
-      </div>
-    </nav>
+    <% include ../partials/navbar %>
 
     <main>
+
       <div class="container">
         <h1>Resume</h1>
         <div class="row resume-row" id="resume-summary">
@@ -93,7 +27,7 @@
           <h1>Education</h1>
           <h2><b>University of Illinois at Urbana-Champaign &mdash; B.S. Computer Science</b></h2>
           <p>
-            College of Engineering — Class of 2014
+            College of Engineering - Class of 2014
           </p>
         </div>
       </div>
@@ -102,7 +36,10 @@
         <div class="row resume-row" id="resume-employment-history">
           <h1>Employment History</h1>
           <div class="employment-entry">
-            <h2><b>Software Engineer &mdash; Cerner Corporation; Kansas City, Missouri</b> (August 2014 - Present)</h2>
+            <h2><b>Software Engineer II &mdash; Raytheon Company; Aurora, Colorado</b> (November 2017 - Present)</h2>
+          </div>
+          <div class="employment-entry">
+            <h2><b>Software Engineer I, II &mdash; Cerner Corporation; Kansas City, Missouri</b> (August 2014 - November 2017)</h2>
             <p>
               Front-end Java developer on Eclipse RCP applications heavily utilizing
               the MVP design pattern among others. Developed, tested and supported
@@ -162,7 +99,7 @@
             <ul>
               <li>Eclipse IDE, Xcode, Oracle SQL Developer</li>
               <li>Eclipse RCP, SWT, Swing, OSGi, JUnit, Mockito, Spark REST Framework</li>
-              <li>VisualVM, WebSphere Application Server, Jenkins CI, Firebase, Wireshark, JIRA</li>
+              <li>VisualVM, WebSphere Application Server, Jenkins CI, AWS, Firebase, Wireshark, JIRA</li>
               <li>Experience in both Unix and Windows environments</li>
             </ul>
           </div>
@@ -183,36 +120,10 @@
           </div>
         </div>
       </div>
+
     </main>
 
-    <section>
-      <div class="container">
-        <p class="text-muted">Updated July 2017</p>
-      </div>
-    </section>
+    <% include ../partials/footer %>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="social-wrapper">
-    			<span><a href="https://twitter.com/avojak"><i class="fa fa-twitter"></i></a></span>
-    			<span><a href="https://www.linkedin.com/in/andrewvojak"><i class="fa fa-linkedin"></i></a></span>
-	        <span><a href="https://github.com/avojak"><i class="fa fa-github"></i></a></span>
-	        <span><a href="https://stackexchange.com/users/1014342/avojak"><i class="fa fa-stack-exchange"></i></a></span>
-	        <span><a href="https://keybase.io/avojak"><i class="fa fa-key" aria-hidden="true"></i></a></span>
-    		</div>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/2679df6489.js"></script>
   </body>
 </html>
