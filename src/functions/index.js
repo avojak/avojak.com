@@ -82,4 +82,16 @@ app.get('/projects/aws-p2-maven-plugin', function(req, res) {
   });
 });
 
+// The 404 Route (ALWAYS keep this as the last route)
+app.get('*', function(req, res) {
+  const title = "Page Not Found";
+  res.status(404).render('pages/404', {
+    title: title,
+    meta: {
+      title: title,
+      description: title
+    }
+  });
+});
+
 exports.app = functions.https.onRequest(app);
