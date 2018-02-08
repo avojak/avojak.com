@@ -1,15 +1,15 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
 var port = process.env.PORT || 8080;
 
-app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
 // Home
-app.get('/', function(req, res) {
+app.get("/", function(req, res) {
   const title = "avojak";
-  res.render('pages/index', {
+  res.render("pages/index", {
     title: title,
     meta: {
       title: title,
@@ -20,9 +20,9 @@ app.get('/', function(req, res) {
 });
 
 // About
-app.get('/about', function(req, res) {
+app.get("/about", function(req, res) {
   const title = "avojak | About";
-  res.render('pages/about', {
+  res.render("pages/about", {
     title: title,
     meta: {
       title: title,
@@ -33,9 +33,9 @@ app.get('/about', function(req, res) {
 });
 
 // Resume
-app.get('/about/resume', function(req, res) {
+app.get("/about/resume", function(req, res) {
   const title = "avojak | Resume";
-  res.render('pages/resume', {
+  res.render("pages/resume", {
     title: title,
     meta: {
       title: title,
@@ -46,9 +46,9 @@ app.get('/about/resume', function(req, res) {
 });
 
 // Hydrogen project page
-app.get('/projects/hydrogen', function(req, res) {
+app.get("/projects/hydrogen", function(req, res) {
   const title = "avojak | Hydrogen";
-  res.render('pages/project', {
+  res.render("pages/project", {
     title: title,
     meta: {
       title: title,
@@ -65,9 +65,9 @@ app.get('/projects/hydrogen', function(req, res) {
 });
 
 // AWS p2 Maven Plugin project page
-app.get('/projects/aws-p2-maven-plugin', function(req, res) {
+app.get("/projects/aws-p2-maven-plugin", function(req, res) {
   const title = "avojak | Hydrogen";
-  res.render('pages/project', {
+  res.render("pages/project", {
     title: title,
     meta: {
       title: title,
@@ -84,9 +84,9 @@ app.get('/projects/aws-p2-maven-plugin', function(req, res) {
 });
 
 // The 404 Route (ALWAYS keep this as the last route)
-app.get('*', function(req, res) {
+app.get("*", function(req, res) {
   const title = "Page Not Found";
-  res.status(404).render('pages/404', {
+  res.status(404).render("pages/404", {
     title: title,
     meta: {
       title: title,
@@ -95,4 +95,4 @@ app.get('*', function(req, res) {
   });
 });
 
-app.listen(port, () => console.log('Server running at http://127.0.0.1:' + port + '/'));
+app.listen(port, () => console.log("Server running at http://127.0.0.1:" + port + "/"));
