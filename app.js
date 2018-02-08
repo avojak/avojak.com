@@ -1,6 +1,7 @@
-const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
+
+var port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
@@ -94,4 +95,4 @@ app.get('*', function(req, res) {
   });
 });
 
-exports.app = functions.https.onRequest(app);
+app.listen(port, () => console.log('Server running at http://127.0.0.1:' + port + '/'));
