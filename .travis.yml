@@ -12,13 +12,23 @@ after_deploy:
   - echo "done deploying"
 
 deploy:
-  provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
-  secret_access_key:
-    secure: "$SECRETACCESSKEY"
-  region: "us-east-1"
-  app: "avojak.com"
-  env: "avojak-prod"
-  bucket_name: "avojak.com"
-  on:
-    branch: master
+  - provider: elasticbeanstalk
+    access_key_id: $ACCESSKEYID
+    secret_access_key:
+      secure: "$SECRETACCESSKEY"
+    region: "us-east-1"
+    app: "avojak.com"
+    env: "avojak-prod"
+    bucket_name: "avojak.com"
+    on:
+      branch: master
+  - provider: elasticbeanstalk
+    access_key_id: $ACCESSKEYID
+    secret_access_key:
+      secure: "$SECRETACCESSKEY"
+    region: "us-east-1"
+    app: "avojak.com"
+    env: "avojak-dev"
+    bucket_name: "avojak.com-dev"
+    on:
+      all_branches: true
