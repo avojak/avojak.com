@@ -179,6 +179,12 @@ div.project-description {
 
 .social-wrapper a {
   color: #333333;
+  text-decoration: none;
+}
+
+a.social-icon:hover {
+  color: #337ab7;
+  text-decoration: none;
 }
 
 /* ==========================================================================
