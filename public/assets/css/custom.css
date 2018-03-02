@@ -57,11 +57,6 @@ section {
   margin-bottom: 20px;
 }
 
-.gravatar-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 /**
  * Add subtle load-in animation for content on the home page
  * Taken from Casper theme for the Ghost blog platform
@@ -83,8 +78,31 @@ section {
    Gravatar
    ========================================================================== */
 
+.gravatar-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gravatar-container:before,
+.gravatar-container:after {
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 30%;
+}
+.gravatar-container:before {
+  margin-left: -50%;
+}
+.gravatar-container:after {
+  margin-right: -50%;
+}
+
 .gravatar {
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border:6px solid rgb(240, 240, 240);
 }
 
 /* ==========================================================================
