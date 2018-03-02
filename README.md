@@ -13,6 +13,8 @@ To run locally:
 $ npm start
 ```
 
+The current build configuration deploys a Docker container to AWS Elastic Beanstalk.
+
 # Built With
 
 - [Express](https://expressjs.com/) - The web application framework for Node.js
