@@ -21,7 +21,6 @@ The current build configuration deploys to Heroku.
 - [EJS](http://ejs.co/) - For UI view templating
 - [Bootstrap](https://getbootstrap.com/) - For responsive UI layout elements
 - [Font Awesome](https://fontawesome.com/) - Icons
-- [Docker](https://www.docker.com/) - Portable deployment
 - [Travis CI](https://travis-ci.org/) - Continuous integration and deployment
 
 [1]: https://github.com/avojak/avojak/blob/master/public/assets/img/favicon/favicon.png
