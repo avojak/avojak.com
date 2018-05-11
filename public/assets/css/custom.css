@@ -44,7 +44,6 @@ header {
 
 main {
   text-align: center;
-  margin-top: 10%;
 }
 
 section {
@@ -152,6 +151,11 @@ div.bio {
    Project Pages
    ========================================================================== */
 
+div.project-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 div.github-badges {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -236,6 +240,10 @@ a.social-icon:hover {
 
 @media (min-width: 768px) {
 
+  main {
+    margin-top: 125px;
+  }
+
   #gravatar-small {
     display: none;
   }
@@ -243,6 +251,10 @@ a.social-icon:hover {
 }
 
 @media (max-width: 767px) {
+
+  main {
+    margin-top: 70px;
+  }
 
   .social-wrapper span {
     padding-left: 10px;
