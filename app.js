@@ -66,7 +66,7 @@ app.get("/projects/hydrogen", function(req, res) {
 
 // AWS p2 Maven Plugin project page
 app.get("/projects/aws-p2-maven-plugin", function(req, res) {
-  const title = "avojak | Hydrogen";
+  const title = "avojak | AWS p2 Maven Plugin";
   res.render("pages/project", {
     title: title,
     meta: {
@@ -76,9 +76,14 @@ app.get("/projects/aws-p2-maven-plugin", function(req, res) {
     activeTab: "projects",
     project: {
       name: "AWS p2 Maven Plugin",
-      status: "In Progress",
+      status: "v1.0", // TODO: Try to get the latest version by using the Nexus Core API (https://oss.sonatype.org/nexus-restlet1x-plugin/default/docs/path__artifact_maven_resolve.html)
       description: "A Maven plugin for deploying a <a href=\"https://www.eclipse.org/equinox/p2/\">p2</a> update site to an <a href=\"https://aws.amazon.com/s3/\">AWS S3</a> bucket.",
-      githubUrl: "https://github.com/avojak/aws-p2-maven-plugin"
+      blogUrl: "https://blog.avojak.com/2018/08/10/aws-p2-maven-plugin/",
+      githubUrl: "https://github.com/avojak/aws-p2-maven-plugin",
+      hosting: {
+        name: "Maven Central",
+        url: "http://mvnrepository.com/artifact/com.avojak.mojo/aws-p2-maven-plugin"
+      }
     }
   });
 });
