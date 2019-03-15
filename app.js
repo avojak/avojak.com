@@ -82,6 +82,7 @@ app.get("/projects/aws-p2-maven-plugin", function(req, res) {
       githubUrl: "https://github.com/avojak/aws-p2-maven-plugin",
       hosting: {
         name: "Maven Central",
+        icon: "<i class=\"fas fa-database\"></i>",
         url: "http://mvnrepository.com/artifact/com.avojak.mojo/aws-p2-maven-plugin"
       }
     }
@@ -106,6 +107,7 @@ app.get("/projects/p2-inspector", function(req, res) {
       githubUrl: "https://github.com/avojak/p2-inspector",
       hosting: {
         name: "Docker Hub",
+        icon: "<i class=\"fab fa-docker\"></i>",
         url: "https://hub.docker.com/r/avojak/p2-inspector"
       }
     }
