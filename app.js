@@ -101,7 +101,7 @@ app.get("/projects/p2-inspector", function(req, res) {
     activeTab: "projects",
     project: {
       name: "p2 Inspector",
-      status: "v1.0.0",
+      status: "v2.0.0",
       description: "A headless Eclipse plugin which exposes a REST interface for inspecting and retrieving the contents of a remote <a href=\"https://www.eclipse.org/equinox/p2/\">p2</a> repository.",
       blogUrl: "https://blog.avojak.com/2019/03/15/p2-inspector/",
       githubUrl: "https://github.com/avojak/p2-inspector",
