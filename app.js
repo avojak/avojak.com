@@ -114,6 +114,31 @@ app.get("/projects/p2-inspector", function(req, res) {
   });
 });
 
+// AWS p2 Repository project page
+app.get("/projects/aws-p2-repository", function(req, res) {
+  const title = "avojak | AWS p2 Repository";
+  res.render("pages/project", {
+    title: title,
+    meta: {
+      title: title,
+      description: "AWS p2 Repository"
+    },
+    activeTab: "projects",
+    project: {
+      name: "AWS p2 Repository",
+      status: "v1.0",
+      description: "AWS p2 Repository is a web application to host <a href=\"https://www.eclipse.org/equinox/p2/\">p2</a> repositories backed by <a href=\"https://aws.amazon.com/s3/\">AWS S3</a>.",
+      blogUrl: "https://blog.avojak.com/2019/03/31/aws-p2-repository/",
+      githubUrl: "https://github.com/avojak/aws-p2-repository",
+      hosting: {
+        name: "Docker Hub",
+        icon: "fab fa-docker",
+        url: "https://hub.docker.com/r/avojak/aws-p2-repository"
+      }
+    }
+  });
+});
+
 // The 404 Route (ALWAYS keep this as the last route)
 app.get("*", function(req, res) {
   const title = "Page Not Found";
