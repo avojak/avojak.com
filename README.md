@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/avojak/avojak.svg?branch=master)](https://travis-ci.org/avojak/avojak)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/830f79687a734c2aa5e11ae392f5d665)](https://www.codacy.com/app/avojak/avojak?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=avojak/avojak&amp;utm_campaign=Badge_Grade)
-[![Known Vulnerabilities](https://snyk.io/test/github/avojak/avojak/badge.svg?targetFile=package.json)](https://snyk.io/test/github/avojak/avojak?targetFile=package.json)
+[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/avojak/avojak.svg)](https://snyk.io/test/github/avojak/avojak?targetFile=package.json)
 
 Source for https://avojak.com
 
