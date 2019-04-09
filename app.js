@@ -57,9 +57,15 @@ app.get("/projects/hydrogen", function(req, res) {
     activeTab: "projects",
     project: {
       name: "Hydrogen",
-      status: "In Progress",
+      status: "v1.0.1",
       description: "Hydrogen is an Eclipse plugin to configure and launch one or more <a href=\"http://www.h2database.com/html/main.html\">H2</a> database servers. Server instances can be launched directly from the Eclipse Run Configuration menu.",
-      githubUrl: "https://github.com/avojak/hydrogen"
+      blogUrl: "https://blog.avojak.com/2019/04/09/hydrogen/",
+      githubUrl: "https://github.com/avojak/hydrogen",
+      hosting: {
+        name: "Eclipse Marketplace",
+        icon: "fas fa-box-open",
+        url: "https://marketplace.eclipse.org/content/hydrogen"
+      }
     }
   });
 });
