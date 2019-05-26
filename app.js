@@ -145,6 +145,25 @@ app.get("/projects/aws-p2-repository", function(req, res) {
   });
 });
 
+// Iridium project page
+app.get("/projects/iridium", function(req, res) {
+  const title = "avojak | Iridium";
+  res.render("pages/project", {
+    title: title,
+    meta: {
+      title: title,
+      description: "Iridium IRC Client"
+    },
+    activeTab: "projects",
+    project: {
+      name: "Iridium",
+      status: "In Progress",
+      description: "Iridium is a native Linux IRC client build in Vala and Gtk for <a href=\"https://elementary.io/\">elementary OS</a>",
+      githubUrl: "https://github.com/avojak/iridium"
+    }
+  });
+});
+
 // The 404 Route (ALWAYS keep this as the last route)
 app.get("*", function(req, res) {
   const title = "Page Not Found";
