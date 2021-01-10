@@ -23,4 +23,4 @@ The current build configuration deploys to Heroku.
 - [Font Awesome](https://fontawesome.com/) - Icons
 - [Travis CI](https://travis-ci.org/) - Continuous integration and deployment
 
-[1]: https://github.com/avojak/avojak/blob/master/public/assets/img/favicon/favicon.png
+[1]: https://github.com/avojak/avojak.com/blob/master/public/assets/img/favicon/favicon.png
