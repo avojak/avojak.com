@@ -158,7 +158,7 @@ app.get("/projects/iridium", function(req, res) {
     project: {
       name: "Iridium",
       status: "In Progress",
-      description: "Iridium is a native Linux IRC client build in Vala and Gtk for <a href=\"https://elementary.io/\">elementary OS</a>.",
+      description: "Iridium is a native Linux IRC client build in Vala and Gtk, and designed for <a href=\"https://elementary.io/\">elementary OS</a>.<br>You can view more information about the project at <a href=\"https://iridium.avojak.com/\">iridium.avojak.com</a>.",
       githubUrl: "https://github.com/avojak/iridium"
     }
   });
