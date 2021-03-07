@@ -15,6 +15,20 @@ $ npm start
 
 The current build configuration deploys to Heroku.
 
+# Docker
+
+To build the Docker image:
+
+```
+$ docker build -t avojak/avojak .
+```
+
+To run:
+
+```
+$ docker run -d --rm --name avojak -p 8080:8080 avojak/avojak
+```
+
 # Built With
 
 - [Express](https://expressjs.com/) - The web application framework for Node.js
