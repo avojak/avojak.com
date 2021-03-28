@@ -38,6 +38,11 @@
           <span class="repo-link"><a href="<%= project.hosting.url %>"><i class="<%= project.hosting.icon %>"></i> <%= project.hosting.name %></a></span>
         </div>
         <% } %>
+        <% if (project.appCenter) { %>
+        <div class="row">
+          <a href="<%= project.appCenter.url %>"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter"></a>
+        </div>
+        <% } %>
       </div>
 
     </main>
