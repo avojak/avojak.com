@@ -1,0 +1,78 @@
+<!-- <div class="avatar">
+  <img
+    srcset="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=300&d=blank 2x"
+    src="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=150&d=blank"
+    alt="avojak Avatar"
+  />
+</div>
+<ul>
+  <li>Denver, CO USA</li>
+</ul>  -->
+
+{% if site.authors[include.author].name %}
+  {% assign author=site.authors[include.author]  %}
+{% else %}
+  {% assign author=site.authors["anonymous"] %}
+{% endif %}
+
+<header>
+  <div class="bio">
+    <div class="avatar">
+      <img
+          srcset="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=300&d=blank 2x"
+          src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=150&d=blank"
+          alt="avojak Avatar"
+      />
+    </div>
+    <div class="author">
+      <h1 class="name">{{ author.name }}</h1>
+      <h2 class="description">{{ author.description }}<br />{{ author.employer }}<br />{{ author.location }}</h2>
+    </div>
+  </div>
+</header>
+
+  <!-- <div class="container">
+      <div class="icon-list">
+        <p><span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> Denver, CO USA</p>
+        <p><span><i class="fas fa-briefcase" aria-hidden="true"></i></span> United Launch Alliance (ULA) (2021 - Present)</p>
+        <p><span><i class="fas fa-briefcase" aria-hidden="true"></i></span> Raytheon Technologies (2017 - 2021)</p>
+        <p><span><i class="fas fa-briefcase" aria-hidden="true"></i></span> Cerner Corporation (2014 - 2017)</p>
+        <p><span><i class="fas fa-university" aria-hidden="true"></i></span> University of Illinois at Urbana-Champaign</p>
+        <p><span><i class="fas fa-graduation-cap" aria-hidden="true"></i></span> B.S. in Computer Science (2014)</p>
+        <p><span><i class="fas fa-graduation-cap" aria-hidden="true"></i></span> Master of Computer Science (est. Dec. 2021)</p>
+        <p><span><i class="fas fa-file-alt" aria-hidden="true"></i></span> Resume (<a href="{{ site.baseurl }}/about/resume">Online</a>)</p>
+      </div>
+      </div>
+  
+    <div class="container">
+      <div class="bio row">
+        <p>
+          Andrew Vojak is a Software Engineer at United Launch Alliance (ULA), and is currently pursuing a Master of Computer Science
+      degree from the University of Illinois at Urbana-Champaign. He has been working professionally since
+          graduating in 2014 with a B.S. in Computer Science, also from the University of Illinois.
+          During his time at Cerner, Andrew helped develop software to integrate physiological waveform data
+          into electronic health records. He made a substantial impact on the project, and was recognized
+          for his contributions around improving workflow performance and CPU utilization. At Raytheon, Andrew worked on several programs, 
+          including GPS OCX where he developed a suite of tools to assist data-gathering from automated testing. With the expertise from a
+          software development background, he shifted focus to implementing DevOps practices where he designed and developed standardized 
+          CI/CD pipelines used program-wide.
+        </p>
+        <p>
+          In a non-professional setting, Andrew enjoys writing various open source apps (including for elementary OS), building new
+          Raspberry Pi projects, tinkering with his homelab, exploring nature, and eating breakfast food at any meal. And of course coffee.
+        </p>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="icon-list row">
+        <em>Active Certifications</em>
+        <p>Security+</p>
+      </div>
+      <br />
+      <div class="icon-list row">
+        <em>Past Certifications</em>
+        <p>AWS Certified Developer - Associate (Expired Feb. 2021)</p>
+        <p>AWS Certified Solutions Architect - Associate (Expired Aug. 2021)</p>
+      </div>
+    </div> -->
