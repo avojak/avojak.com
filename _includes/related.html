@@ -1,33 +1,4 @@
 {% comment %}
---------------------------------------------
-Newest, next, and previous non-hidden posts:
---------------------------------------------
-{% endcomment %}
-
-<!-- <h2 class="up-next">Up Next</h2>
-
-{% unless site.posts.first == page %}
-  {% unless site.posts.first.hidden %}
-    {% include featured.html post=site.posts.first %}
-  {% endunless %}
-{% endunless %}
-
-{% if page.next %}
-  {% unless page.next.hidden %}
-    {% unless page.next == site.posts.first %}
-      {% include featured.html post=page.next %}
-    {% endunless %}
-  {% endunless %}
-{% endif %}
-
-{% if page.previous %}
-  {% unless page.previous.hidden %}
-    {% include featured.html post=page.previous %}
-  {% endunless %}
-{% endif %} -->
-
-
-{% comment %}
 --------------------------------------
 Non-hidden posts with the same tag(s):
 --------------------------------------
@@ -48,17 +19,11 @@ Non-hidden posts with the same tag(s):
     {% for tag in post.tags %}
       {% unless post.url == page.url %}
         {% unless post.hidden %}
-          {% unless post == site.posts.first %}
-            {% unless post == page.next %}
-              {% unless post == page.previous %}
-                {% if page.tags contains tag %}
-                  {% assign sameTagCount = sameTagCount | plus: 1 %}
-                  {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
-                  {% assign commonTags = commonTags | append: tagmarkup %}
-                {% endif %}
-              {% endunless %}
-            {% endunless %}
-          {% endunless %}
+          {% if page.tags contains tag %}
+            {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+            {% assign commonTags = commonTags | append: tagmarkup %}
+          {% endif %}
         {% endunless %}
       {% endunless %}
     {% endfor %}

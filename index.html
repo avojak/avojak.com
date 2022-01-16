@@ -1,6 +1,20 @@
 ---
-layout: default
+layout: cover
 ---
+
+<header class="center">
+  <div class="bio" id="{{ page.layout }}">
+    <!-- <div > -->
+      <img class="avatar" style="float: none; margin-left: auto; margin-right: auto;"
+          srcset="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=300&d=blank 2x"
+          src="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=150&d=blank"
+          alt="avojak Avatar"
+      />
+    <!-- </div> -->
+    <h1>@avojak</h1>
+    <h2>Software Engineer</h2>
+  </div>
+</header>
 
 <!-- {% unless paginator.previous_page %}
   {% comment %}

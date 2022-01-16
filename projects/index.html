@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Projects
 redirect_from:
   - /projects/archive/
   - /projects/archive
@@ -11,6 +12,11 @@ redirect_from:
   {% comment %}
     Newest posts in a unique, Medium-like layout on the first page
   {% endcomment %}
+  <header class="center">
+    <h1>Projects</h1>
+    <h2>A selection of my favorite side-projects that I've worked on over the years</h2>
+  </header>
+  
   <section class="latest">
     {% assign post=paginator.posts.first %}
     {% include featured.html post=post %}
@@ -54,3 +60,10 @@ redirect_from:
   {% endif %}
 </nav>
 
+<div>
+  <hr />
+  <article>
+    <h2>Looking for More?</h2>
+    <p>This is only a selection of some of my favorite side projects. My complete open-source work can be found on my <a href="https://github.com/avojak" target="_blank">GitHub profile</a>. Go check it out!
+  </article>
+</div>

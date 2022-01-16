@@ -8,7 +8,7 @@ tags:
   - p2
   - Eclipse
   - Docker
-  - evergreen
+  # - evergreen
 ---
 
 A headless Eclipse plugin which exposes a REST interface for inspecting and retrieving the contents of a remote p2 repository.

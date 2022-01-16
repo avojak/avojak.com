@@ -9,13 +9,25 @@ body > section {
   padding: 0 1rem;
 }
 
+// Overrides for cover pages to expand the section to the full height of the screen
+body > section#cover {
+  position: relative;
+  // height: 100%;
+  top: 25%;
+}
+
 body > footer {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
   display: flex;
   flex-flow: wrap-reverse;
   justify-content: space-between;
   overflow-x: auto;
   padding: 0 1rem;
+  width: 100%;
+  
+  // bottom: 0;
+  // position: absolute;
+  // z-index: 9999;
 
   ul {
     display: inline-block;
@@ -45,6 +57,12 @@ body > footer {
     line-height: 3em;
     margin: 0;
   }
+}
+
+// Overrides for cover pages to push the footer to the bottom of the screen
+body > footer#cover {
+  bottom: 0;
+  position: absolute;
 }
 
 article {

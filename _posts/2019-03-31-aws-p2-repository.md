@@ -9,7 +9,9 @@ tags:
   - p2
   - Eclipse
   - Docker
-  - evergreen
+  - HTML
+  - Bootstrap
+  # - evergreen
 ---
 
 AWS p2 Repository is a web application to host p2 repositories backed by AWS S3.
@@ -22,7 +24,7 @@ $ docker run --rm -d -p 8081:8081 --env-file ./env.list aws-p2-repository
 
 Example `env.list` file:
 
-```
+```properties
 AWS_ACCESS_KEY_ID=FAKENOTREAL123
 AWS_SECRET_KEY=FAKENOTREAL123
 AWS_S3_BUCKET_NAME=p2.example.com
